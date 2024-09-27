@@ -38,7 +38,34 @@ def make_purchase(self, quantity):
     
     return total_price
 
+product = Product("Laptop", 150, 1000)  
 
+
+try:
+    product.make_purchase(5)  
+except ValueError as e:
+    print(e)
+
+try:
+    product.make_purchase(10)  
+    print(e)
+
+try:
+    product.make_purchase(100) 
+except ValueError as e:
+    print(e)
+
+try:
+    product.make_purchase(200)  
+    print(e)
+
+try:
+    product.make_purchase(-1)  
+except ValueError as e:
+    print(e)
+
+
+print(f"Final stock for {product.name}: {product.amount}")
 
 
      
