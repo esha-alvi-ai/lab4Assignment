@@ -1,6 +1,5 @@
 # coded by cybil fatima sp23-bai-013  collaborator
 
-
 def make_purchase(self, quantity):
     if quantity < 0:
         raise ValueError("Quantity cannot be negative. Please put a positive number.")
